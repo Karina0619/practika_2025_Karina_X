@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="back-button">⬅️ Новый заказ</div>
+            <div class="cart">
+                🛒 <span class="cart-count">3</span>
+            </div>
+        </header>
+
+        <main>
+            <input type="text" class="search" placeholder="Поиск">
+
+            <div class="products">
+                <div class="product">
+                    <span class="product-icon">🍞</span>
+                    <div class="product-details">
+                        <div class="product-name">Булка с корицей</div>
+                        <div class="product-price">150 ₽</div>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+
+                <div class="product">
+                    <span class="product-icon">🥐</span>
+                    <div class="product-details">
+                        <div class="product-name">Круассан шоколадный</div>
+                        <div class="product-price">200 ₽</div>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+
+                <div class="product">
+                    <span class="product-icon">🥖</span>
+                    <div class="product-details">
+                        <div class="product-name">Багет французский</div>
+                        <div class="product-price">180 ₽</div>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+
+            <div class="cart-section">
+                <h3 class="section-title">Корзина:</h3>
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <span>- Булка с корицей 2 × 150 ₽</span>
+                        <span>= 300 ₽</span>
+                    </div>
+                    <div class="cart-item">
+                        <span>- Круассан 1 × 200 ₽</span>
+                        <span>= 200 ₽</span>
+                    </div>
+                </div>
+
+                <input type="text" class="promo-code" placeholder="Введите код">
+
+                <div class="total">
+                    <span>Итого:</span>
+                    <span>500 ₽</span>
+                </div>
+            </div>
+
+            <div class="delivery">
+                <h4>Доставка:</h4>
+                <div class="delivery-options">
+                    <label>
+                        <input type="radio" name="delivery" checked>
+                        Да
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery">
+                        Нет (самовывоз)
+                    </label>
+                </div>
+
+                <input type="text" class="address" value="ул. Пирогова, 15">
+                <input type="text" class="time" value="Сегодня, 18:00-19:00">
+            </div>
+
+            <div class="payment">
+                <h4>Оплата:</h4>
+                <div class="payment-options">
+                    <label>
+                        <input type="radio" name="payment" checked>
+                        Карта
+                    </label>
+                    <label>
+                        <input type="radio" name="payment">
+                        Наличные
+                    </label>
+                    <label>
+                        <input type="radio" name="payment">
+                        Apple Pay
+                    </label>
+                </div>
+            </div>
+
+            <button class="order-btn">ОФОРМИТЬ ЗАКАЗ</button>
+        </main>
+    </div>
+</body>
+</html>
